@@ -29,7 +29,7 @@ $(function ()
      //GAS側Postイベントエントリ
       var url = 'https://script.google.com/macros/s/AKfycbyYZk_OrR2Pb6kMA2CCxTpbBGbM34t80b2HovVA_ecmiy6cG8_LLZRTtaiPe_knkJ_UrA/exec';
                  
-      
+      window.alert("liff.getprofile");  
       liff.getProfile().then
       (profile => 
         {
@@ -38,7 +38,7 @@ $(function ()
                  var JSONdata = {
 	                                 speach1:speach1
                                  };
-            
+                 window.alert(JSONdata);  
                  //スピナー表示
                  //インジケータ表示
                  // Loading 画像を表示
