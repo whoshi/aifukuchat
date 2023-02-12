@@ -47,7 +47,7 @@ function sendMessages(text) {
       "contents": [
         {
           "type": "text",
-          "text": "ロボホンに送信しました",
+          "text": "AIが生成した回答",
           "size": "lg",
           "align": "center",
           "weight": "bold",
