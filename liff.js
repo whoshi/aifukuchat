@@ -107,18 +107,12 @@ function sendMessages(user_name,text) {
       "contents": [
         {
           "type": "text",
-          "text": user_name + "さんへの回答",
+          "text": user_name + "さんへの回答\n" + text,
           "size": "lg",
           "align": "start",
           "gravity": "top",
           "color": "#BF0202",
           "wrap": true
-        },
-        {
-          "type": "text",
-          "text": text,
-          "wrap": true,
-           "color": "#808080"
         },
         {
           "type": "separator"
