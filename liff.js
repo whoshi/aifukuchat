@@ -47,7 +47,7 @@ function sendMessages(text) {
       "contents": [
         {
           "type": "text",
-          "text": "AIが生成した回答",
+          "text": "さんへの回答\n",
           "size": "lg",
           "align": "center",
           "weight": "bold",
@@ -84,6 +84,7 @@ function sendMessages(text) {
     });
 }
 */
+
 function sendMessages(user_name,text) {
     liff.sendMessages([{
   "type": "flex",
@@ -126,6 +127,7 @@ function sendMessages(user_name,text) {
         window.alert('Failed to send message ' + error);
     });
 }
+
 // Webブラウザからメッセージ送信
 function shareTargetPicker(text) {
     liff.shareTargetPicker([{
