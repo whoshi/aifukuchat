@@ -33,7 +33,7 @@ function sendText(text) {
 }
 
 // LINEトーク画面上でメッセージ送信
-
+/*
 function sendMessages(text) {
     liff.sendMessages([{
   "type": "flex",
@@ -83,18 +83,66 @@ function sendMessages(text) {
         window.alert('Failed to send message ' + error);
     });
 }
-/*
+*/
 function sendMessages(text) {
     liff.sendMessages([{
-        'type': 'text',
-        'text': text
-    }]).then(function () {
-        liff.closeWindow();
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://raw.githubusercontent.com/whoshi/lbila/master/aifukuchat1%202%202.png",
+      "align": "start",
+      "size": "full",
+      "aspectRatio": "20:10",
+      "aspectMode": "fit",
+      "gravity": "center",
+      "backgroundColor": "#7FFFD4"
+     },
+    "direction": "ltr",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "AIが生成した回答",
+          "size": "lg",
+          "align": "center",
+          "weight": "bold",
+          "color": "#340AD9"
+        },
+        {
+          "type": "separator"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": text,
+          "size": "lg",
+          "align": "start",
+          "gravity": "top",
+          "color": "#BF0202",
+          "wrap": true
+        },
+        {
+          "type": "separator"
+        }
+      ]
+    }
+  }
+}]).then(function () {
+        //liff.closeWindow();
     }).catch(function (error) {
         window.alert('Failed to send message ' + error);
     });
 }
-*/
 // Webブラウザからメッセージ送信
 function shareTargetPicker(text) {
     liff.shareTargetPicker([{
