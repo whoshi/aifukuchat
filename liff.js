@@ -106,8 +106,8 @@ function sendMessages(text) {
       "layout": "vertical",
       "contents": [
         {
-          "type": "さんへの回答",
-          "text": text,
+          "type": "text",
+          "text": "さんへの回答",
           "size": "lg",
           "align": "start",
           "gravity": "top",
