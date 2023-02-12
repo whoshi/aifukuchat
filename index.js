@@ -51,7 +51,7 @@ $(function ()
 	                   //インジケータ除去
 	                   // Loading 画像を消す
                            removeLoading();
-	                   if(dt.message == 'success!')
+	                   if(dt.message != 'success!')
 	                   {
                                sendText(dt.message);//To LINE 送信
 	                       liff.closeWindow(); 
