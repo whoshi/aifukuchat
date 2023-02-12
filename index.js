@@ -26,7 +26,7 @@ $(function ()
          
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbxDjzNS-NjXOrUolL55_FQXiZgIXaa5Xjrf2_VK9Gv-OR797ywNtRkpFGBYg-HFkRihJg/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbzAPX8-dRX3eXcJlOqBvcyQs5DcxLzQJGg6nEb_gZ_isHxKdnWi0x-U1GtKtar9URwd9A/exec';
                  
        
       liff.getProfile().then
@@ -41,7 +41,7 @@ $(function ()
                  //スピナー表示
                  //インジケータ表示
                  // Loading 画像を表示
-                 dispLoading("生成中...");
+                 dispLoading("回答生成中...");
              
                  $.post(url,
                         JSONdata,
