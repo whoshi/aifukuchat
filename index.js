@@ -27,7 +27,7 @@ $(function ()
       //inputdata = inputdata  + "\n" + "【ダンス】" + "\n" + robohondance + "\n"　+ "【発話内容2】" + "\n" + speach2 + "【翻訳】" + "\n" + transrate ;	    
       window.alert("liff.getprofile");  
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbyYZk_OrR2Pb6kMA2CCxTpbBGbM34t80b2HovVA_ecmiy6cG8_LLZRTtaiPe_knkJ_UrA/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbxmHGYdZd2cWxSHBB7OgIjdwQvi6xhlcC4UFFWgb2DnhllD4KO43L8Ta1I64kLnlAf0GA/exec';
                  
        
       liff.getProfile().then
