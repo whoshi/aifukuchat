@@ -106,13 +106,19 @@ function sendMessages(text) {
       "layout": "vertical",
       "contents": [
         {
-          "type": "text",
+          "type": "さんへの回答",
           "text": text,
           "size": "lg",
           "align": "start",
           "gravity": "top",
           "color": "#BF0202",
           "wrap": true
+        },
+        {
+          "type": "text",
+          "text": text,
+          "wrap": true,
+           "color": "#808080"
         },
         {
           "type": "separator"
