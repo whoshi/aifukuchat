@@ -52,7 +52,7 @@ $(function ()
                            removeLoading();
 	                   if(dt.message != 'エラーが発生しました')
 	                   {
-                               sendText(dt.message);//To LINE 送信
+                               sendText(name,dt.message);//To LINE 送信
 	                       liff.closeWindow(); 
 	                   }else
 	                   {
