@@ -85,7 +85,7 @@ function sendMessages(text) {
 }
 */
 
-function sendMessages(user_name,text) {
+function sendMessages(text) {
     liff.sendMessages([{
   "type": "flex",
   "altText": "Flex Message",
