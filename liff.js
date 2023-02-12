@@ -84,7 +84,7 @@ function sendMessages(text) {
     });
 }
 */
-function sendMessages(text) {
+function sendMessages(user_name,text) {
     liff.sendMessages([{
   "type": "flex",
   "altText": "Flex Message",
@@ -107,7 +107,7 @@ function sendMessages(text) {
       "contents": [
         {
           "type": "text",
-          "text": "さんへの回答",
+          "text": user_name + "さんへの回答",
           "size": "lg",
           "align": "start",
           "gravity": "top",
