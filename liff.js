@@ -92,7 +92,7 @@ function sendMessages(text) {
     "type": "bubble",
     "hero": {
       "type": "image",
-      "url": "https://raw.githubusercontent.com/whoshi/lbila/master/aifukuchat1%202%202.png",
+      "url": "https://github.com/whoshi/lbila/blob/master/aifukuchat.png?raw=true",
       "align": "start",
       "size": "full",
       "aspectRatio": "20:10",
