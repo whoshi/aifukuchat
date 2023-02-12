@@ -36,13 +36,13 @@ $(function ()
                  // プロフィール名
                  const name = profile.displayName
                  var JSONdata = {
-	                                 speach1:speach1
+	                                 chatdata:speach1
                                  };
                  
                  //スピナー表示
                  //インジケータ表示
                  // Loading 画像を表示
-                 dispLoading("ロボホンに送信中...");
+                 dispLoading("GPT-3に送信中...");
              
                  $.post(url,
                         JSONdata,
