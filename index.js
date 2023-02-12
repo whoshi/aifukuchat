@@ -23,13 +23,13 @@ $(function ()
       }
      
       
-      var inputdata = "【発話内容1】" + "\n" + speach1 + "\n" + "【アクション】" + "\n" + robohonaction +  "\n" + "【ソング】" + "\n" + robohonsong;
-      inputdata = inputdata  + "\n" + "【ダンス】" + "\n" + robohondance + "\n"　+ "【発話内容2】" + "\n" + speach2 + "【翻訳】" + "\n" + transrate ;	    
-      
+      //var inputdata = "【発話内容1】" + "\n" + speach1 + "\n" + "【アクション】" + "\n" + robohonaction +  "\n" + "【ソング】" + "\n" + robohonsong;
+      //inputdata = inputdata  + "\n" + "【ダンス】" + "\n" + robohondance + "\n"　+ "【発話内容2】" + "\n" + speach2 + "【翻訳】" + "\n" + transrate ;	    
+      window.alert("liff.getprofile");  
      //GAS側Postイベントエントリ
       var url = 'https://script.google.com/macros/s/AKfycbyYZk_OrR2Pb6kMA2CCxTpbBGbM34t80b2HovVA_ecmiy6cG8_LLZRTtaiPe_knkJ_UrA/exec';
                  
-      window.alert("liff.getprofile");  
+       
       liff.getProfile().then
       (profile => 
         {
@@ -38,7 +38,7 @@ $(function ()
                  var JSONdata = {
 	                                 speach1:speach1
                                  };
-                 window.alert(JSONdata);  
+                 
                  //スピナー表示
                  //インジケータ表示
                  // Loading 画像を表示
