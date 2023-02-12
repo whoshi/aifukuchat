@@ -107,7 +107,7 @@ function sendMessages(user_name,text) {
       "contents": [
         {
           "type": "text",
-          "text": user_name + "さんへの回答\n" + text,
+          "text": text,
           "size": "lg",
           "align": "start",
           "gravity": "top",
