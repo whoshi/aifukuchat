@@ -25,7 +25,7 @@ $(function ()
       
       //var inputdata = "【発話内容1】" + "\n" + speach1 + "\n" + "【アクション】" + "\n" + robohonaction +  "\n" + "【ソング】" + "\n" + robohonsong;
       //inputdata = inputdata  + "\n" + "【ダンス】" + "\n" + robohondance + "\n"　+ "【発話内容2】" + "\n" + speach2 + "【翻訳】" + "\n" + transrate ;	    
-      window.alert("liff.getprofile");  
+      
      //GAS側Postイベントエントリ
       var url = 'https://script.google.com/macros/s/AKfycbxmHGYdZd2cWxSHBB7OgIjdwQvi6xhlcC4UFFWgb2DnhllD4KO43L8Ta1I64kLnlAf0GA/exec';
                  
