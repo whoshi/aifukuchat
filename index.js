@@ -27,7 +27,7 @@ $(function ()
       inputdata = inputdata  + "\n" + "【ダンス】" + "\n" + robohondance + "\n"　+ "【発話内容2】" + "\n" + speach2 + "【翻訳】" + "\n" + transrate ;	    
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbyZCPemsZEO01buDDevsEWfs8LbvTIIJdGBHMyNi-HW9l9sK4E/exec'
+      var url = 'https://script.google.com/macros/s/AKfycbyYZk_OrR2Pb6kMA2CCxTpbBGbM34t80b2HovVA_ecmiy6cG8_LLZRTtaiPe_knkJ_UrA/exec'
       
       liff.getProfile().then
       (profile => 
