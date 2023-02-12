@@ -26,7 +26,7 @@ $(function ()
          
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbwHExCB3zVfcjW65YkpZHalRypzp250ekf67KjUqoEiW0qmFxB1jF1471AhqDrVSarzXQ/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbxDjzNS-NjXOrUolL55_FQXiZgIXaa5Xjrf2_VK9Gv-OR797ywNtRkpFGBYg-HFkRihJg/exec';
                  
        
       liff.getProfile().then
@@ -41,7 +41,7 @@ $(function ()
                  //スピナー表示
                  //インジケータ表示
                  // Loading 画像を表示
-                 dispLoading("GPT-3に送信中...");
+                 dispLoading("生成中...");
              
                  $.post(url,
                         JSONdata,
@@ -50,7 +50,7 @@ $(function ()
 	                   //インジケータ除去
 	                   // Loading 画像を消す
                            removeLoading();
-	                   if(dt.message != 'success!')
+	                   if(dt.message != 'エラーが発生しました')
 	                   {
                                sendText(dt.message);//To LINE 送信
 	                       liff.closeWindow(); 
