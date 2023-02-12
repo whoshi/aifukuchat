@@ -101,23 +101,6 @@ function sendMessages(text) {
       "backgroundColor": "#7FFFD4"
      },
     "direction": "ltr",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "AIが生成した回答",
-          "size": "lg",
-          "align": "center",
-          "weight": "bold",
-          "color": "#340AD9"
-        },
-        {
-          "type": "separator"
-        }
-      ]
-    },
     "body": {
       "type": "box",
       "layout": "vertical",
