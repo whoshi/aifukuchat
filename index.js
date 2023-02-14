@@ -50,6 +50,7 @@ $(function ()
 	                   //インジケータ除去
 	                   // Loading 画像を消す
                            removeLoading();
+			   window.alert(dt.message);  
 	                   if(dt.message != 'エラーが発生しました')
 	                   {
                                sendText(dt.message);//To LINE 送信
