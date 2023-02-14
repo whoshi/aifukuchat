@@ -26,7 +26,7 @@ $(function ()
          
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbxfcOZRc7dLh6_a2gwohg1Zm7_u-dfKD7Mu93IM5tAKPISSOSuJ0mhTN_NiGb4nGI814g/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbxnWlxqBgMzH2V01zPnp6jZLyaKEZZ3yQ4MfSvP1RAtm0KWSTz6XdrAi42UtA1uK8qNgw/exec';
 	         
                  
        
