@@ -26,7 +26,7 @@ $(function ()
          
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbzdWwR07PR1mbKGaj3MMNN16EWWis50tYSq2mhhA1ZnvhXCBMkJdvyFUdCBkgIq3oI_bQ/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbwsfyiIfzbf1KD9RmHS2_nciirK_nt9Ept5RvK2htUrtLIs-xSJ4DPKvvAd3l6_YiB9og/exec';
 	         
                  
        
@@ -57,7 +57,7 @@ $(function ()
 	                       liff.closeWindow(); 
 	                   }else
 	                   {
-		               sendText('GPTでエラーが発生しました。質問の仕方を変えてやり直してみてください！');//To LINE 送信
+		               sendText(dt.message);//To LINE 送信
 	                       liff.closeWindow();   
 			       //window.alert("LIFFアプリでエラーが発生");  
                            }
