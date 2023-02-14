@@ -26,7 +26,8 @@ $(function ()
          
       
      //GAS側Postイベントエントリ
-      var url = 'https://script.google.com/macros/s/AKfycbzAPX8-dRX3eXcJlOqBvcyQs5DcxLzQJGg6nEb_gZ_isHxKdnWi0x-U1GtKtar9URwd9A/exec';
+      var url = 'https://script.google.com/macros/s/AKfycbxk6qa_IkH42mPI702VJaDOnDOxwDaDIMGhiaTEQW8UWXZUxTiCahQbDHfR4vJ4Dc2Kfg/exec';
+	         
                  
        
       liff.getProfile().then
@@ -50,14 +51,15 @@ $(function ()
 	                   //インジケータ除去
 	                   // Loading 画像を消す
                            removeLoading();
-			   window.alert(dt.message);  
 	                   if(dt.message != 'エラーが発生しました')
 	                   {
                                sendText(dt.message);//To LINE 送信
 	                       liff.closeWindow(); 
 	                   }else
 	                   {
-		                     window.alert("LIFFアプリでエラーが発生");  
+		                sendText("GPTでエラーが発生しました。質問の仕方を変えてやり直してみてください！);//To LINE 送信
+	                       liff.closeWindow();   
+			       //window.alert("LIFFアプリでエラーが発生");  
                            }
 	                }
                  );
